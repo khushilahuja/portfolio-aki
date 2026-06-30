@@ -32,8 +32,7 @@ export const projects: Project[] = [
     thumbnail: "https://img.youtube.com/vi/6NMpFHvb1vE/maxresdefault.jpg",
     videoUrl: "https://youtu.be/6NMpFHvb1vE",
     result: "Motion Design",
-    description:
-      "Illustrated stop motion-style animation with frame-perfect timing and fluid motion design — crafted to keep viewers engaged from the first frame to the last.",
+    description: "Stop motion-style animation with illustrated elements and fluid motion design.",
   },
   {
     id: 2,
@@ -41,8 +40,7 @@ export const projects: Project[] = [
     thumbnail: "https://drive.google.com/thumbnail?id=1NxqEdnPgyZO1JYNFQmrRHEU2zCyjwjFa&sz=w1280",
     videoUrl: "https://drive.google.com/file/d/1NxqEdnPgyZO1JYNFQmrRHEU2zCyjwjFa/view",
     result: "Event Promo",
-    description:
-      "High-energy animated promo built with punchy motion graphics and tight visual pacing — designed to build excitement and drive action before the event.",
+    description: "Punchy animated promo with dynamic motion graphics and tight visual pacing.",
   },
   {
     id: 3,
@@ -50,8 +48,7 @@ export const projects: Project[] = [
     thumbnail: "https://img.youtube.com/vi/BmialHN3bVw/maxresdefault.jpg",
     videoUrl: "https://www.youtube.com/watch?v=BmialHN3bVw",
     result: "YouTube Education",
-    description:
-      "Stick-figure educational content engineered for YouTube retention — clear visual breakdowns, satisfying motion transitions, and pacing that makes complex ideas feel effortless.",
+    description: "Stick-figure educational content with clear visual breakdowns and smooth transitions.",
   },
   {
     id: 4,
@@ -59,8 +56,7 @@ export const projects: Project[] = [
     thumbnail: "https://img.youtube.com/vi/VxTEHzl2sWM/maxresdefault.jpg",
     videoUrl: "https://youtu.be/VxTEHzl2sWM",
     result: "YouTube Education",
-    description:
-      "Educational stick animation combining precise motion graphics with guided narration flow — structured to maximise watch time and leave viewers with clear takeaways.",
+    description: "Educational stick animation with motion graphics and guided narration flow.",
   },
   {
     id: 5,
@@ -68,8 +64,7 @@ export const projects: Project[] = [
     thumbnail: "https://drive.google.com/thumbnail?id=11iWP3T_W9yhws1r8WdeBmIw8RmmIPRVc&sz=w1280",
     videoUrl: "https://drive.google.com/file/d/11iWP3T_W9yhws1r8WdeBmIw8RmmIPRVc/view",
     result: "Animated Story",
-    description:
-      "Cinematic animated story with richly illustrated scenes, deliberate camera movement, and a narrative arc built to hold attention and leave a lasting impression.",
+    description: "Richly illustrated cinematic story with deliberate camera movement and strong narrative.",
   },
   {
     id: 6,
@@ -77,8 +72,7 @@ export const projects: Project[] = [
     thumbnail: "https://img.youtube.com/vi/LrJDDqJIk8g/maxresdefault.jpg",
     videoUrl: "https://www.youtube.com/watch?v=LrJDDqJIk8g",
     result: "Character Animation",
-    description:
-      "Character-driven animation with expressive performance, smooth scene transitions, and a visual style crafted to make every story land with emotional impact.",
+    description: "Character-driven animation with expressive performance and smooth scene transitions.",
   },
 ];
 

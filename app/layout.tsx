@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Video Editor Portfolio | High-Retention Editing",
+  title: "Aki Edits",
   description:
-    "High-retention video editing for YouTubers, brands, and creators. View work, testimonials, and hire me.",
+    "Video editing portfolio by Aki — animation, motion design, educational content, and more. View work and get in touch.",
   icons: {
     icon: [
       { url: "/favicons/favicon.ico" },

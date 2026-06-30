@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { stats } from "@/lib/data";
 
@@ -23,25 +22,6 @@ export function Hero() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="relative z-10 mx-auto w-full max-w-5xl"
       >
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.4 }}
-          whileHover={{ scale: 1.03 }}
-          className="mb-6 inline-flex cursor-default items-center gap-2.5 rounded-full border border-white/20 bg-white/10 py-1.5 pl-1.5 pr-4 backdrop-blur-sm"
-        >
-          <div className="h-7 w-7 shrink-0 overflow-hidden rounded-full ring-1 ring-white/30">
-            <Image
-              src="/images/aki.png"
-              alt="Profile"
-              width={28}
-              height={28}
-              className="h-full w-full object-cover"
-              priority
-            />
-          </div>
-          <span className="text-sm text-zinc-100">Trusted by creators and brands</span>
-        </motion.div>
         <h1 className="max-w-3xl text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
           High-Retention Video Editing for YouTubers
         </h1>
