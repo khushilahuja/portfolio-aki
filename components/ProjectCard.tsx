@@ -36,9 +36,6 @@ export function ProjectCard({ project, onOpen }: ProjectCardProps) {
           </div>
         </div>
 
-        <span className="absolute bottom-3 left-3 rounded-full bg-indigo-500/90 px-3 py-1 text-xs font-medium text-white">
-          {project.result}
-        </span>
       </div>
       <div className="p-5">
         <h3 className="text-base font-semibold text-white">{project.title}</h3>
