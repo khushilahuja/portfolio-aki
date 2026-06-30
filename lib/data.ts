@@ -28,7 +28,7 @@ export type ProcessStep = {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Client Edit #1",
+    title: "Animation Edit",
     thumbnail: "https://img.youtube.com/vi/6NMpFHvb1vE/maxresdefault.jpg",
     videoUrl: "https://youtu.be/6NMpFHvb1vE",
     result: "— update me",
@@ -36,7 +36,7 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Client Edit #2",
+    title: "Short-form Commercial",
     thumbnail: "https://drive.google.com/thumbnail?id=1NxqEdnPgyZO1JYNFQmrRHEU2zCyjwjFa&sz=w1280",
     videoUrl: "https://drive.google.com/file/d/1NxqEdnPgyZO1JYNFQmrRHEU2zCyjwjFa/view",
     result: "— update me",
@@ -44,7 +44,7 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Gaming Commentary Edit",
+    title: "Educational Stick Animation",
     thumbnail: "https://img.youtube.com/vi/BmialHN3bVw/maxresdefault.jpg",
     videoUrl: "https://www.youtube.com/watch?v=BmialHN3bVw",
     result: "— update me",
@@ -52,7 +52,7 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    title: "Client Edit #4",
+    title: "Educational Stick Animation",
     thumbnail: "https://img.youtube.com/vi/VxTEHzl2sWM/maxresdefault.jpg",
     videoUrl: "https://youtu.be/VxTEHzl2sWM",
     result: "— update me",
@@ -60,7 +60,7 @@ export const projects: Project[] = [
   },
   {
     id: 5,
-    title: "Client Edit #5",
+    title: "Animation Edit",
     thumbnail: "https://drive.google.com/thumbnail?id=11iWP3T_W9yhws1r8WdeBmIw8RmmIPRVc&sz=w1280",
     videoUrl: "https://drive.google.com/file/d/11iWP3T_W9yhws1r8WdeBmIw8RmmIPRVc/view",
     result: "— update me",
@@ -68,7 +68,7 @@ export const projects: Project[] = [
   },
   {
     id: 6,
-    title: "Featured Edit",
+    title: "Animation Edit",
     thumbnail: "https://img.youtube.com/vi/LrJDDqJIk8g/maxresdefault.jpg",
     videoUrl: "https://www.youtube.com/watch?v=LrJDDqJIk8g",
     result: "— update me",

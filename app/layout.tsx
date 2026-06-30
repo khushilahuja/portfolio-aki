@@ -16,6 +16,19 @@ export const metadata: Metadata = {
   title: "Video Editor Portfolio | High-Retention Editing",
   description:
     "High-retention video editing for YouTubers, brands, and creators. View work, testimonials, and hire me.",
+  icons: {
+    icon: [
+      { url: "/favicons/favicon.ico" },
+      { url: "/favicons/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [{ url: "/favicons/apple-touch-icon.png" }],
+    other: [
+      { url: "/favicons/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/favicons/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
+    ],
+  },
+  manifest: "/favicons/manifest.json",
 };
 
 export default function RootLayout({

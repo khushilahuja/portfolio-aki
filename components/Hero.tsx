@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { stats } from "@/lib/data";
 
@@ -22,6 +23,28 @@ export function Hero() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="relative z-10 mx-auto w-full max-w-5xl"
       >
+        {/* profile avatar */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          whileHover={{ scale: 1.08, rotate: 3 }}
+          className="group relative mb-6 inline-block cursor-default"
+        >
+          {/* spinning ring */}
+          <span className="absolute -inset-1 rounded-full bg-gradient-to-tr from-indigo-500 via-violet-500 to-transparent opacity-70 blur-[2px] transition-opacity duration-300 group-hover:opacity-100" />
+          <span className="absolute -inset-[3px] animate-spin rounded-full border border-dashed border-indigo-400/40 [animation-duration:8s]" />
+          <div className="relative h-16 w-16 overflow-hidden rounded-full ring-2 ring-indigo-500/60 ring-offset-2 ring-offset-black/50">
+            <Image
+              src="/images/aki.png"
+              alt="Profile"
+              fill
+              className="object-cover transition duration-300 group-hover:brightness-110"
+              priority
+            />
+          </div>
+        </motion.div>
+
         <p className="mb-4 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1 text-sm text-zinc-100">
           Trusted by creators and brands
         </p>
