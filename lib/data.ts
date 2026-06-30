@@ -28,51 +28,57 @@ export type ProcessStep = {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Animation Edit",
+    title: "Stop Motion Animation",
     thumbnail: "https://img.youtube.com/vi/6NMpFHvb1vE/maxresdefault.jpg",
     videoUrl: "https://youtu.be/6NMpFHvb1vE",
-    result: "— update me",
-    description: "Update this with a short description of the project — niche, style, and result.",
+    result: "Motion Design",
+    description:
+      "Illustrated stop motion-style animation with frame-perfect timing and fluid motion design — crafted to keep viewers engaged from the first frame to the last.",
   },
   {
     id: 2,
-    title: "Short-form Commercial",
+    title: "Animated Event Promo",
     thumbnail: "https://drive.google.com/thumbnail?id=1NxqEdnPgyZO1JYNFQmrRHEU2zCyjwjFa&sz=w1280",
     videoUrl: "https://drive.google.com/file/d/1NxqEdnPgyZO1JYNFQmrRHEU2zCyjwjFa/view",
-    result: "— update me",
-    description: "Update this with a short description of the project — niche, style, and result.",
+    result: "Event Promo",
+    description:
+      "High-energy animated promo built with punchy motion graphics and tight visual pacing — designed to build excitement and drive action before the event.",
   },
   {
     id: 3,
     title: "Educational Stick Animation",
     thumbnail: "https://img.youtube.com/vi/BmialHN3bVw/maxresdefault.jpg",
     videoUrl: "https://www.youtube.com/watch?v=BmialHN3bVw",
-    result: "— update me",
-    description: "Update this with a short description of the project — niche, style, and result.",
+    result: "YouTube Education",
+    description:
+      "Stick-figure educational content engineered for YouTube retention — clear visual breakdowns, satisfying motion transitions, and pacing that makes complex ideas feel effortless.",
   },
   {
     id: 4,
     title: "Educational Stick Animation",
     thumbnail: "https://img.youtube.com/vi/VxTEHzl2sWM/maxresdefault.jpg",
     videoUrl: "https://youtu.be/VxTEHzl2sWM",
-    result: "— update me",
-    description: "Update this with a short description of the project — niche, style, and result.",
+    result: "YouTube Education",
+    description:
+      "Educational stick animation combining precise motion graphics with guided narration flow — structured to maximise watch time and leave viewers with clear takeaways.",
   },
   {
     id: 5,
-    title: "Animation Edit",
+    title: "Cinematic Story Animation",
     thumbnail: "https://drive.google.com/thumbnail?id=11iWP3T_W9yhws1r8WdeBmIw8RmmIPRVc&sz=w1280",
     videoUrl: "https://drive.google.com/file/d/11iWP3T_W9yhws1r8WdeBmIw8RmmIPRVc/view",
-    result: "— update me",
-    description: "Update this with a short description of the project — niche, style, and result.",
+    result: "Animated Story",
+    description:
+      "Cinematic animated story with richly illustrated scenes, deliberate camera movement, and a narrative arc built to hold attention and leave a lasting impression.",
   },
   {
     id: 6,
-    title: "Animation Edit",
+    title: "Character Animation",
     thumbnail: "https://img.youtube.com/vi/LrJDDqJIk8g/maxresdefault.jpg",
     videoUrl: "https://www.youtube.com/watch?v=LrJDDqJIk8g",
-    result: "— update me",
-    description: "Update this with a short description of the project — niche, style, and result.",
+    result: "Character Animation",
+    description:
+      "Character-driven animation with expressive performance, smooth scene transitions, and a visual style crafted to make every story land with emotional impact.",
   },
 ];
 
