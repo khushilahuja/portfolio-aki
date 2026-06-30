@@ -8,7 +8,7 @@ export function Hero() {
     <section className="relative flex min-h-screen items-center overflow-hidden px-6">
       <iframe
         className="pointer-events-none absolute inset-0 h-full w-full scale-150 md:scale-125"
-        src="https://www.youtube.com/embed/BmialHN3bVw?autoplay=1&mute=1&loop=1&playlist=BmialHN3bVw&controls=0&showinfo=0&modestbranding=1&rel=0"
+        src="https://www.youtube.com/embed/BmialHN3bVw?autoplay=1&mute=1&loop=1&playlist=BmialHN3bVw&controls=0&showinfo=0&modestbranding=1&rel=0&cc_load_policy=0"
         title="Hero background video"
         allow="autoplay; encrypted-media; picture-in-picture"
         referrerPolicy="strict-origin-when-cross-origin"

@@ -28,63 +28,51 @@ export type ProcessStep = {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Gaming Commentary Edit",
-    thumbnail:
-      "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80",
-    videoUrl: "https://youtu.be/BmialHN3bVw?si=kaH-A48W51XKs2UC",
-    result: "2M+ views",
-    description:
-      "Fast-paced long-form edit focused on retention, punchy zooms, and dynamic captions for gaming creators.",
+    title: "Client Edit #1",
+    thumbnail: "https://img.youtube.com/vi/6NMpFHvb1vE/maxresdefault.jpg",
+    videoUrl: "https://youtu.be/6NMpFHvb1vE",
+    result: "— update me",
+    description: "Update this with a short description of the project — niche, style, and result.",
   },
   {
     id: 2,
-    title: "YouTube Talking-Head Edit",
-    thumbnail:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
-    videoUrl: "https://youtu.be/BmialHN3bVw?si=kaH-A48W51XKs2UC",
-    result: "48% avg watch time",
-    description:
-      "Story-driven cuts, strategic b-roll, and motion graphics designed to increase viewer watch time.",
+    title: "Client Edit #2",
+    thumbnail: "https://drive.google.com/thumbnail?id=1NxqEdnPgyZO1JYNFQmrRHEU2zCyjwjFa&sz=w1280",
+    videoUrl: "https://drive.google.com/file/d/1NxqEdnPgyZO1JYNFQmrRHEU2zCyjwjFa/view",
+    result: "— update me",
+    description: "Update this with a short description of the project — niche, style, and result.",
   },
   {
     id: 3,
-    title: "Podcast-to-Reel Repurpose",
-    thumbnail:
-      "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=1200&q=80",
-    videoUrl: "https://youtu.be/BmialHN3bVw?si=kaH-A48W51XKs2UC",
-    result: "1.3M short views",
-    description:
-      "Repurposed long podcasts into viral vertical clips with hook-first intros and subtitles.",
+    title: "Gaming Commentary Edit",
+    thumbnail: "https://img.youtube.com/vi/BmialHN3bVw/maxresdefault.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=BmialHN3bVw",
+    result: "— update me",
+    description: "Update this with a short description of the project — niche, style, and result.",
   },
   {
     id: 4,
-    title: "E-commerce Ad Creative",
-    thumbnail:
-      "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=1200&q=80",
-    videoUrl: "https://youtu.be/BmialHN3bVw?si=kaH-A48W51XKs2UC",
-    result: "3.8x ROAS",
-    description:
-      "Performance ad edited for paid social using strong hooks, value framing, and CTA-oriented pacing.",
+    title: "Client Edit #4",
+    thumbnail: "https://img.youtube.com/vi/VxTEHzl2sWM/maxresdefault.jpg",
+    videoUrl: "https://youtu.be/VxTEHzl2sWM",
+    result: "— update me",
+    description: "Update this with a short description of the project — niche, style, and result.",
   },
   {
     id: 5,
-    title: "Education Channel Edit",
-    thumbnail:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
-    videoUrl: "https://youtu.be/BmialHN3bVw?si=kaH-A48W51XKs2UC",
-    result: "120K new subscribers",
-    description:
-      "Clean educational edit with visual callouts and chapter transitions to keep content easy to follow.",
+    title: "Client Edit #5",
+    thumbnail: "https://drive.google.com/thumbnail?id=11iWP3T_W9yhws1r8WdeBmIw8RmmIPRVc&sz=w1280",
+    videoUrl: "https://drive.google.com/file/d/11iWP3T_W9yhws1r8WdeBmIw8RmmIPRVc/view",
+    result: "— update me",
+    description: "Update this with a short description of the project — niche, style, and result.",
   },
   {
     id: 6,
-    title: "Fitness Creator Reels",
-    thumbnail:
-      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80",
-    videoUrl: "https://youtu.be/BmialHN3bVw?si=kaH-A48W51XKs2UC",
-    result: "900K+ reach",
-    description:
-      "High-energy short-form edits with beat sync, rapid cuts, and retention-focused text overlays.",
+    title: "Featured Edit",
+    thumbnail: "https://img.youtube.com/vi/LrJDDqJIk8g/maxresdefault.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=LrJDDqJIk8g",
+    result: "— update me",
+    description: "Update this with a short description of the project — niche, style, and result.",
   },
 ];
 

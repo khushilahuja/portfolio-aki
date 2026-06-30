@@ -12,29 +12,31 @@ export function Process() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-3xl font-bold text-white sm:text-4xl">How We&apos;ll Work Together</h2>
-        <p className="mt-3 max-w-2xl text-zinc-300">
-          A simple, transparent process from first message to final export.
-        </p>
+        <p className="text-xs font-semibold uppercase tracking-widest text-indigo-400">How it works</p>
+        <h2 className="mt-2 text-3xl font-bold text-white sm:text-4xl">From brief to final cut</h2>
       </motion.div>
 
-      <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {processSteps.map((step, index) => (
-          <motion.div
-            key={step.id}
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.35, delay: index * 0.05 }}
-            className="rounded-2xl border border-white/10 bg-zinc-900 p-6"
-          >
-            <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-indigo-500/20 text-sm font-semibold text-indigo-300">
-              {String(step.id).padStart(2, "0")}
-            </span>
-            <h3 className="mt-4 text-lg font-semibold text-white">{step.title}</h3>
-            <p className="mt-2 text-sm text-zinc-300">{step.description}</p>
-          </motion.div>
-        ))}
+      <div className="relative mt-12">
+        {/* connecting line — desktop only */}
+        <div className="pointer-events-none absolute left-[calc(12.5%-1px)] right-[calc(12.5%-1px)] top-5 hidden h-px bg-gradient-to-r from-transparent via-indigo-500/30 to-transparent lg:block" />
+
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          {processSteps.map((step, index) => (
+            <motion.div
+              key={step.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.4, delay: index * 0.08 }}
+            >
+              <div className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full border border-indigo-500/40 bg-indigo-500/15 text-sm font-bold text-indigo-300">
+                {String(step.id).padStart(2, "0")}
+              </div>
+              <h3 className="mt-4 text-base font-semibold text-white">{step.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-zinc-400">{step.description}</p>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );

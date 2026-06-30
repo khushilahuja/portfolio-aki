@@ -5,25 +5,29 @@ import { useState } from "react";
 import { ProjectCard } from "@/components/ProjectCard";
 import { projects, type Project } from "@/lib/data";
 
-function toYouTubeEmbedUrl(videoUrl: string): string {
+function toEmbedUrl(videoUrl: string): string {
   const withAutoplay = (embedUrl: string) =>
     `${embedUrl}${embedUrl.includes("?") ? "&" : "?"}autoplay=1&rel=0&modestbranding=1`;
 
-  // Keep this helper lightweight: it supports youtu.be, watch?v=, shorts, and already-embedded URLs.
   try {
-    // youtube embed: already in iframe-safe form
+    // Google Drive: convert view/sharing URL to embeddable preview
+    if (videoUrl.includes("drive.google.com/file/d/")) {
+      const match = videoUrl.match(/\/file\/d\/([a-zA-Z0-9_-]+)/);
+      if (match) return `https://drive.google.com/file/d/${match[1]}/preview`;
+    }
+
+    // YouTube embed: already in iframe-safe form
     if (videoUrl.includes("youtube.com/embed/")) return withAutoplay(videoUrl);
 
-    // Short link: https://youtu.be/VIDEO_ID?si=...
+    // Short link: https://youtu.be/VIDEO_ID
     if (videoUrl.includes("youtu.be/")) {
       const id = new URL(videoUrl).pathname.replace("/", "").trim();
       return withAutoplay(`https://www.youtube.com/embed/${id}`);
     }
 
-    // Watch link: https://www.youtube.com/watch?v=VIDEO_ID&...
+    // Watch link: https://www.youtube.com/watch?v=VIDEO_ID
     if (videoUrl.includes("youtube.com/watch")) {
-      const url = new URL(videoUrl);
-      const id = url.searchParams.get("v");
+      const id = new URL(videoUrl).searchParams.get("v");
       return id ? withAutoplay(`https://www.youtube.com/embed/${id}`) : videoUrl;
     }
 
@@ -33,7 +37,7 @@ function toYouTubeEmbedUrl(videoUrl: string): string {
       return withAutoplay(`https://www.youtube.com/embed/${id}`);
     }
   } catch {
-    // If parsing fails (e.g., non-YouTube URLs), fall back to raw value.
+    // fall back to raw value for any unrecognised URL
   }
 
   return videoUrl;
@@ -96,7 +100,7 @@ export function Projects() {
               {/* The iframe is only rendered after click to keep initial load fast. */}
               <div className="aspect-video overflow-hidden rounded-xl border border-white/10">
                 <iframe
-                  src={toYouTubeEmbedUrl(activeProject.videoUrl)}
+                  src={toEmbedUrl(activeProject.videoUrl)}
                   title={activeProject.title}
                   className="h-full w-full"
                   loading="lazy"
